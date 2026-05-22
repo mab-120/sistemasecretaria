@@ -17,17 +17,27 @@ public class Aluno {
     private boolean escolaridadePublica;
     private String habilitacao;
     private String modulo;
-    private String periodo;
+    private Periodo periodo;
+
+    private String rua;
+    private String complemento;
+    private String apartamento;
+    private String bloco;
+    private String bairro;
+    private String cidade;
+    private int cep;
+    private int telefone;
+    private int telefoneCelular;
+    private String email;
 
     public Aluno () {
 
     }
 
-    public Aluno (int id, String nome, String nomeSocial, LocalDate dataNascimento, Genero genero, String nacionalidade, String paisOrigem, boolean afrodescendente, String primeiraFiliacao, String segundaFiliacao, boolean escolaridadePublica, String habilitacao, String modulo, String periodo)
+    public Aluno (int id, String nome, LocalDate dataNascimento, Genero genero, String nacionalidade, String paisOrigem, boolean afrodescendente, String primeiraFiliacao, String segundaFiliacao, boolean escolaridadePublica, String habilitacao, String modulo, Periodo periodo, String rua, String cidade, int cep, int telefone, String email )
     {
         this.id = id;
         this.nome=nome;
-        this.nomeSocial = nomeSocial;
         this.dataNascimento = dataNascimento;
         this.genero = genero;
         this.nacionalidade=nacionalidade;
@@ -39,6 +49,11 @@ public class Aluno {
         this.habilitacao = habilitacao;
         this.modulo = modulo;
         this.periodo = periodo;
+        this.rua = rua;
+        this.cidade = cidade;
+        this.cep = cep;
+        this.telefone = telefone;
+        this.email = email;
     }
 
     public int getId() {
@@ -145,13 +160,95 @@ public class Aluno {
         this.modulo = modulo;
     }
 
-    public String getPeriodo() {
+    public Periodo getPeriodo() {
         return periodo;
     }
 
-    public void setPeriodo(String periodo) {
+    public void setPeriodo(Periodo periodo) {
         this.periodo = periodo;
     }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
+    }
+
+    public String getApartamento() {
+        return apartamento;
+    }
+
+    public void setApartamento(String apartamento) {
+        this.apartamento = apartamento;
+    }
+
+    public String getBloco() {
+        return bloco;
+    }
+
+    public void setBloco(String bloco) {
+        this.bloco = bloco;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public int getCep() {
+        return cep;
+    }
+
+    public void setCep(int cep) {
+        this.cep = cep;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
+    }
+
+    public int getTelefoneCelular() {
+        return telefoneCelular;
+    }
+
+    public void setTelefoneCelular(int telefoneCelular) {
+        this.telefoneCelular = telefoneCelular;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    
 
 
     
